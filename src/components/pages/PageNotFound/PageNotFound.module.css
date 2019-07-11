@@ -1,0 +1,15 @@
+.wrapper {
+  position: relative;
+  width: 100wh;
+  height: 100vh;
+}
+
+.title {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: red;
+}

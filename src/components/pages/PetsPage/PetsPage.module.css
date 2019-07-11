@@ -1,0 +1,29 @@
+/* container, title, petsList, petItem, petImg, petName */
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 52px;
+  margin: 30px;
+}
+
+.petsList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.petItem {
+  margin: 100px;
+}
+
+.petImg {
+  width: 300px;
+  height: 300px;
+}
+
+.petName {
+  font-size: 24px;
+}

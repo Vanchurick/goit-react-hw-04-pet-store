@@ -1,0 +1,13 @@
+.wrapper {
+  padding: 100px;
+}
+
+.title {
+  font-size: 56px;
+  margin-bottom: 50px;
+}
+
+.description {
+  font-size: 32px;
+  margin-top: 30px;
+}

@@ -1,0 +1,22 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: #000;
+  height: 100px;
+  padding: 50px;
+}
+
+.navItem {
+  margin: 50px;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 36px;
+}
+
+.active {
+  color: rgb(255, 0, 0);
+}
