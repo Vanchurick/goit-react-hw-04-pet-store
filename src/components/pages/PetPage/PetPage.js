@@ -32,7 +32,7 @@ export default class PetPage extends Component {
     }
 
     return this.props.history.push({
-      pathname: '/',
+      pathname: '/pets',
     });
   };
 
@@ -41,9 +41,15 @@ export default class PetPage extends Component {
       match: {
         params: { id },
       },
+      history,
     } = this.props;
 
     const pet = pets.find(item => item.id === id);
+
+    if (!pet)
+      return history.push({
+        pathname: '/pets',
+      });
 
     const { name, image, age, gender, color, breed, description } = pet;
     const {
@@ -56,6 +62,7 @@ export default class PetPage extends Component {
       infoItem,
       descript,
     } = styles;
+
     return (
       <div className={wrapper}>
         <button className={button} type="button" onClick={this.handleReturn}>

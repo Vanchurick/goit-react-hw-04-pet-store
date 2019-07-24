@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import Navigation from './Navigation/Navigation';
 import HomePage from './pages/HomePage/HomePage';
@@ -21,6 +21,7 @@ export default class App extends Component {
           <Route path="/pets/:id" component={PetPage} />
           <Route path="/pets" component={PetsPage} />
           <Route component={PageNotFound} />
+          <Redirect to="/pets" />
         </Switch>
       </div>
     );
