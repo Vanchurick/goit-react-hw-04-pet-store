@@ -6,7 +6,6 @@ import HomePage from './pages/HomePage/HomePage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import PetPage from './pages/PetPage/PetPage';
 import PetsPage from './pages/PetsPage/PetsPage';
-import PageNotFound from './pages/PageNotFound/PageNotFound';
 
 export default class App extends Component {
   state = {};
@@ -20,8 +19,8 @@ export default class App extends Component {
           <Route path="/about" component={AboutPage} />
           <Route path="/pets/:id" component={PetPage} />
           <Route path="/pets" component={PetsPage} />
-          <Route component={PageNotFound} />
-          <Redirect to="/pets" />
+
+          <Redirect push to="/pets" />
         </Switch>
       </div>
     );
